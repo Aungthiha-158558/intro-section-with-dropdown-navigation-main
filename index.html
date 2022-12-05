@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- note: I used bootstrap. -->
+  <!-- navigation Bar start-->
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid mx-3 ">
+      <a href="#" class="navbar-brand me-5 fw-bold mb-2 "><h1 class="fs-1">Snap</h1></a>
+      <button class="navbar-toggler borderStyle" data-bs-toggle="collapse" data-bs-target="#navbarcollapse"  aria-controls="navbarcollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class=" navbar-nav list-unstyled ">
+          <li class="me-5 navbar-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Features</a>
+            <ul style="width: 100px;" class="borderNone dropdown-menu list-unstyled">
+              <li  class="dropdown-item"><img src="./images/icon-todo.svg" alt=""> Todo List</li>
+              <li  class="dropdown-item"><img src="./images/icon-calendar.svg" alt=""> Calendar</li>
+              <li  class="dropdown-item"><img src="./images/icon-reminders.svg" alt=""> Reminders</li>
+              <li  class="dropdown-item"><img src="./images/icon-planning.svg" alt=""> Planning</li>
+            </ul>
+          </li> 
+          <li class="me-5 navbar-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Company</a>
+            <ul style="width: 100px;" class="borderNone list-unstyled dropdown-menu">
+              <li class="dropdown-item">History</li>
+              <li class="dropdown-item">Our Team</li>
+              <li class="dropdown-item">Blog</li>
+            </ul>
+          </li>
+          <li class="me-5 navbar-item">
+            <a href="#" class="nav-link">Careers</a>
+          </li>
+          <li class="me-5 navbar-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+        </ul> 
+        <ul class="margin navbar-nav ms-auto "> 
+            <li class="navbar-item"><a href="#" class="nav-link me-4">
+              Login
+            </a></li>
+            <li class="navbar-item">
+              <button class="nav-link btn btn-outline-secondary" style="width: 100px;">Register</button>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- main -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <!-- forMainImage -->
+        <div class="img col-12 col-sm-12 col-lg-5 col-lg-5 order-lg-last">
+          <img style="width: 400px;" src="./images/image-hero-desktop.png" alt="">
+        </div>
+        <!-- forMainText -->
+        <div class="col-12 col-sm-12 col-md-7 col-lg-7">
+          <div class="leftContainer  ">
+            <div class="display-2 fw-bold mb-4 lh-1"> Make <br> remote work</div>
+            <p class="text-muted mb-4">Get your team in sync, no matter your location.<br> Streamline processes, 
+            createb-4 team rituals, and<br>  watch productivity soar.</p>
+            <button class="btn btn-dark mb-5">
+              Learn more
+            </button>
+            <div class="row g-4 mb-5" >
+              <img src="./images/client-databiz.svg" class="col-2 me-2" alt="">
+              <img src="./images/client-audiophile.svg" class="col-2 me-2" alt="">
+              <img src="./images/client-meet.svg" class="col-2 me-2" alt="">
+              <img src="./images/client-maker.svg" class="col-2 me-2" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js "></script>
+</body>
+</html>
